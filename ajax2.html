@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>HTML5 & Ajaxがわかるサイト</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <style type="text/css">
+    .bs-component+.bs-component {
+      margin-top: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .bs-docs-section {
+        margin-top: 8em;
+      }
+
+      .bs-component {
+        position: relative;
+      }
+
+      .bs-component .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        z-index: 1;
+        display: block;
+      }
+
+      .bs-component .modal-dialog {
+        width: 90%;
+      }
+
+      .bs-component .popover {
+        position: relative;
+        display: inline-block;
+        width: 220px;
+        margin: 20px;
+      }
+
+      .nav-tabs {
+        margin-bottom: 15px;
+      }
+
+      .progress {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          HTML5 & Ajaxがわかるサイト
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mr-auto">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ajax1.html">[基本] Ajaxとは何か</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ajax2.html">[応用] Ajaxは何ができるか</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--  container  -->
+
+  <div class="container">
+
+    <div class="page-header" id="banner">
+      <div class="row my-4">
+        <div class="col-12">
+          <h1 class="display-3">HTML5 & Ajaxがわかるサイト</h1>
+          <p class="lead">インタラクティブシステム通論 II</p>
+        </div>
+      </div>
+    </div>
+
+    <!--  row 1  -->
+
+    <div class="row">
+
+      <div class="col-md-4 order-md-last">
+        <div class="bs-component">
+          <h4>このサイトについて</h4>
+          <p>このサイトは、公立はこだて未来大学大学院の2019年度講義<a href="http://duchamp.fun.ac.jp/course/2019/iss2/">「インタラクティブシステム通論 II」</a>の最終成果作品です。学部3年の学生を対象として、HTML、CSS、JavaScriptの知識をわかりやすく紹介する目的で制作されました。さらに、HTML5の技術であるCanvas、DOM、Ajaxを、実際のデモを体験しながら学ぶことができます。</p>
+        </div><br>
+      </div>
+
+      <div class="col-md-8">
+        <div class="bs-component">
+          <div class="card mb-3">
+            <h5 class="card-header">目次</h5>
+            <div class="card-body">
+              1. <a href="index.html#1" class="card-link">HTMLとは何か</a><br>
+              2. <a href="index.html#2" class="card-link">CSSは何ができるか</a><br>
+              3. <a href="index.html#3" class="card-link">JavaScriptは何ができるか</a><br>
+              　3.1. <a href="index.html#3.1" class="card-link">WEBサイトに「動き」を加える</a><br>
+              　3.2. <a href="index.html#3.2" class="card-link">イベント処理</a><br>
+              　3.3. <a href="index.html#3.3" class="card-link">非同期通信</a><br>
+              4. [基本] <a href="ajax.html" class="card-link">Ajaxとは何か</a><br>
+              5. [応用] <a href="#5" class="card-link">Ajaxは何ができるか</a><br>
+              　5.1. <a href="#5.1" class="card-link">百人一首アプリ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><br>
+
+    <!--  row 2  -->
+
+    <div class="row">
+      <div class="col-md-8 col-xs-12">
+
+        <img src="2000px-AJAX_logo_by_gengns.svg_.png" alt="Ajax" class="img-fluid"><br><br>
+
+        <h4><a name="4">5. [応用] Ajaxは何ができるか</a></h4>
+        <div class="bs-component">
+          <blockquote class="blockquote">
+            <!--<p class="mb-0">-->
+            <p>Ajaxが実際にどのような流れで動いているのかを紹介します。Ajaxの機能は、以下の流れで実装されています。</p><br>
+            <div style="margin:0 auto; width:400px;">
+              <img src="event processing.png" alt="event processing" width="400" class="img-fluid">
+            </div>
+          </blockquote>
+        </div><br>
+
+        <div class="bs-component">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              ① ページ上で何らかのイベントが発生します。
+              <span class="badge badge-primary badge-pill"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              ② JavaScriptとXMLHttpRequestで、サーバーに対してリクエストを送信します。その際、欲しい情報や返ってくる情報を指定してリクエストを送信します。
+              <span class="badge badge-primary badge-pill"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              ③ Ajaxは、サーバーで受け取った情報の処理を行います。その際、ユーザーはサーバーの処理中でも操作を継続して行うことができます。
+              <span class="badge badge-primary badge-pill"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              ④ 処理結果を、サーバーがXML形式で応答します。
+              <span class="badge badge-primary badge-pill"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              ⑤ サーバーから送られてきた情報をもとに、DOMでページを更新します。その際、更新のあった部分のみを書き換えるため、画面が一瞬白くなることはありません。
+              <span class="badge badge-primary badge-pill"></span>
+            </li>
+          </ul>
+        </div><br><br>
+
+        <h5><a name="5.1">5.1. 百人一首アプリ</a></h5>
+        <p class="mb-0">以下はAjaxを仕様した百人一首アプリのイメージです。</p><br>
+        <h5><img src="https://i.gyazo.com/d1aa09221df162d79d8f0ca949728291.gif" alt="百人一首アプリ完成イメージ" width="562" class="img-fluid"></h5>
+
+        <!--<div class="bs-component">
+          <h4>百人一首アプリの実装方法</h4>
+        </div>--><br><br><br>
+
+        <div class="bs-component">
+          <div style="margin:0 auto; width:200px;">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="ajax1.html">&laquo;</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="index.html">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="ajax1.html">2</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link">3</a>
+              </li>
+              <li class="page-item desable">
+                <a class="page-link">&raquo;</a>
+              </li>
+            </ul>
+          </div>
+        </div><br><br><br>
+
+      </div>
+
+      <div class="col-md-4 col-xs-12">
+
+        <div class="page-header">
+          <h4 id="tables">制作メンバー</h4>
+        </div>
+
+        <div class="bs-component">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">名前</th>
+                <th scope="col">学年</th>
+                <th scope="col">所属</th>
+                <!--
+                <th scope="col">研究室</th>-->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">相川健太</th>
+                <td>M1</td>
+                <td>高度ICT領域</td>
+                <!--
+                <td>奥野研究室</td>-->
+              </tr>
+              <tr>
+                <th scope="row">深津紀樹</th>
+                <td>M2</td>
+                <td>メディアデザイン領域</td>
+                <!--
+                <td>姜(南)研究室</td>-->
+              </tr>
+              <tr>
+                <th scope="row">高橋正幸</th>
+                <td>M1</td>
+                <td>メディアデザイン領域</td>
+                <!--
+                <td>姜(南)研究室</td>-->
+              </tr>
+              <tr>
+                <th scope="row">千葉康貴</th>
+                <td>M1</td>
+                <td>メディアデザイン領域</td>
+                <!--
+                <td>姜(南)研究室</td>-->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </div><br><br><br>
+
+    <div style="text-align: center;">
+      <p><small>Copyright © 2019-2020 インタラクティブシステム通論 II チームA. All Rights Reserved.</small></p>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    $('.bs-component [data-toggle="popover"]').popover();
+    $('.bs-component [data-toggle="tooltip"]').tooltip();
+  </script>
+</body>
+
+</html>

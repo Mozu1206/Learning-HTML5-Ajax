@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>HTML5 & Ajaxがわかるサイト</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <style type="text/css">
+    .bs-component+.bs-component {
+      margin-top: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .bs-docs-section {
+        margin-top: 8em;
+      }
+
+      .bs-component {
+        position: relative;
+      }
+
+      .bs-component .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        z-index: 1;
+        display: block;
+      }
+
+      .bs-component .modal-dialog {
+        width: 90%;
+      }
+
+      .bs-component .popover {
+        position: relative;
+        display: inline-block;
+        width: 220px;
+        margin: 20px;
+      }
+
+      .nav-tabs {
+        margin-bottom: 15px;
+      }
+
+      .progress {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          HTML5 & Ajaxがわかるサイト
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mr-auto">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ajax1.html">[基本] Ajaxとは何か</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ajax2.html">[応用] Ajaxは何ができるか</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--  container  -->
+
+  <div class="container">
+
+    <div class="page-header" id="banner">
+      <div class="row my-4">
+        <div class="col-12">
+          <h1 class="display-3">HTML5 & Ajaxがわかるサイト</h1>
+          <p class="lead">インタラクティブシステム通論 II</p>
+        </div>
+      </div>
+    </div>
+
+    <!--  row 1  -->
+
+    <div class="row">
+
+      <div class="col-md-4 order-md-last">
+        <div class="bs-component">
+          <h4>このサイトについて</h4>
+          <p>このサイトは、公立はこだて未来大学大学院の2019年度講義<a href="http://duchamp.fun.ac.jp/course/2019/iss2/">「インタラクティブシステム通論 II」</a>の最終成果作品です。学部3年の学生を対象として、HTML、CSS、JavaScriptの知識をわかりやすく紹介する目的で制作されました。さらに、HTML5の技術であるCanvas、DOM、Ajaxを、実際のデモを体験しながら学ぶことができます。</p>
+        </div><br>
+      </div>
+
+      <div class="col-md-8">
+        <div class="bs-component">
+          <div class="card mb-3">
+            <h5 class="card-header">目次</h5>
+            <div class="card-body">
+              1. <a href="#1" class="card-link">HTMLとは何か</a><br>
+              2. <a href="#2" class="card-link">CSSは何ができるか</a><br>
+              3. <a href="#3" class="card-link">JavaScriptは何ができるか</a><br>
+              　3.1. <a href="#3.1" class="card-link">WEBサイトに「動き」を加える</a><br>
+              　3.2. <a href="#3.2" class="card-link">イベント処理</a><br>
+              　3.3. <a href="#3.3" class="card-link">非同期通信</a><br>
+              4. [基本] <a href="ajax1.html" class="card-link">Ajaxとは何か</a><br>
+              5. [応用] <a href="ajax2.html" class="card-link">Ajaxは何ができるか</a><br>
+              　5.1. <a href="ajax2.html#5.1" class="card-link">百人一首アプリ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><br>
+
+    <!--  row 2  -->
+
+    <div class="row">
+      <div class="col-md-8 col-xs-12">
+
+        <img src="1499794874html5-js-css3-logo-png.png" alt="HTML5" class="img-fluid"><br><br><br>
+
+        <h4><a name="1">1. HTMLとは何か</a></h4>
+        <div class="bs-component">
+          <blockquote class="blockquote">
+            <p class="mb-0">HTML（エイチティーエムエル、<em>HyperText Markup Language</em>）は、ウェブページを作成するために開発された言語です。 現在、インターネット上で公開されてるウェブページのほとんどは、HTMLで作成されています。</p>
+            <footer class="blockquote-footer">HTMQ in <cite title="Source Title"><a href="http://www.htmq.com/htmlkihon/001.shtml">HTMLとは？－HTMLの基本</a></cite></footer>
+          </blockquote>
+        </div><br>
+
+        <h4><a name="2">2. CSSは何ができるか</a></h4>
+        <div class="bs-component">
+          <blockquote class="blockquote">
+            <p class="mb-0">CSS（<em>Cascading Style Sheets</em>、カスケーディング・スタイル・シート）とは、ウェブページのスタイルを指定するための言語です。CSSは、HTMLと組み合わせて使用する言語です。 HTMLがウェブページ内の各要素の意味や情報構造を定義するのに対して、CSSではそれらをどのように装飾するかを指定します。 例えば、ウェブページがスクリーンに表示される際の色・サイズ・レイアウトなどの表示スタイルや、
+              プリンタなどの機器で印刷・出力される際の出力スタイル、 音声で読み上げられる際の再生スタイルなど、 ウェブページをどのようなスタイルで表示・出力・再生するかについて指定することができます。</p>
+            <footer class="blockquote-footer">HTMQ in <cite title="Source Title"><a href="http://www.htmq.com/csskihon/001.shtml">CSSとは？－CSSの基本</a></cite></footer>
+          </blockquote>
+        </div><br>
+
+        <h4><a name="3">3. JavaScriptは何ができるか</a></h4>
+        <div class="bs-component">
+          <blockquote class="blockquote">
+            <p class="mb-0">JavaScriptは主にInternet ExplorerやGoogle Chromeといったブラウザ上で動作するプログラミング言語です。</p>
+            <footer class="blockquote-footer">侍ブログ編集部 in <cite title="Source Title"><a href="https://www.sejuku.net/blog/3936">初心者必見！JavaScriptでできることと作れるものってどんなもの？ | 侍エンジニア塾ブログ（Samurai Blog） - プログラミング入門者向けサイト</a></cite></footer><br>
+
+            <h5><a name="3.1">3.1. WEBサイトに「動き」を加える</a></h5>
+            <p class="mb-0">HTML、CSSの操作を動的に行うことができます。動的とは、WEBページが表示された後に、HTMLの要素を追加したり、CSSで色を変えることができることを指します。そのため、目立たせたいボタンやメニューにアニメーションや効果を追加したりできるので、ユーザーが使いやすいサイトを作ることが可能なのです。</p>
+            <footer class="blockquote-footer">侍ブログ編集部 in <cite title="Source Title"><a href="https://www.sejuku.net/blog/3936">初心者必見！JavaScriptでできることと作れるものってどんなもの？ | 侍エンジニア塾ブログ（Samurai Blog） - プログラミング入門者向けサイト</a></cite></footer><br>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Canvas</h5>
+                <h6 class="card-subtitle mb-2 text-muted">HTML要素</h6>
+                <p class="mb-0">
+                  HTML5とCanvasは調べているとよく出てくる内容で、疑問に思った初心者の方も多いのではないでしょうか。CanvasはHTML5とJavaScriptを組み合わせて図を描画できる機能です。まずはCanvasとは何かについてを知っておきましょう。Canvasは、HTML5とJavaScriptを使ってブラウザ上で図を描くための仕様です。HTML5という現在主流になっているHTMLのバージョンでのみ、Canvasは使うことが出来ます。ただし、Canvas単体ではアニメーションさせることは出来ないので、JavaScriptを使って描画と再描画を繰り替えす必要があります。また、CanvasはFlashを使わずに図を描画することが可能です。なおかつ外部に画像ファイルを用意しなくても良いというのが大きなメリットになります。
+                </p>
+                <footer class="blockquote-footer">侍ブログ編集部 in <cite title="Source Title"><a href="https://www.sejuku.net/blog/3936">知っておきたいHTMLのCanvasとは？何ができるのかを解説 | 侍エンジニア塾ブログ（Samurai Blog） - プログラミング入門者向けサイト</a></cite></footer><br>
+                <div style="margin:0 auto; width:400px;">
+                  <canvas id="canvas1" width="400" height="300"></canvas>
+                </div>
+              </div>
+            </div><br>
+
+            <h5><a name="3.2">3.2. イベント処理</a></h5>
+            <p class="mb-0">JavaScriptは、マウスの動作やクリックされたという動作をイベントとして取得することができます。そのイベントと紐づけて、いろいろな動作をつけることも可能です。</p>
+            <footer class="blockquote-footer">侍ブログ編集部 in <cite title="Source Title"><a href="https://www.sejuku.net/blog/3936">初心者必見！JavaScriptでできることと作れるものってどんなもの？ | 侍エンジニア塾ブログ（Samurai Blog） - プログラミング入門者向けサイト</a></cite></footer><br>
+
+            <h5><a name="3.3">3.3. 非同期通信</a></h5>
+            <p class="mb-0">非同期通信とは、「リアルタイム通信」を実現する技術のことです。通常WEBサイトでは、「Internet Explorer」や「Google
+              Chrome」といったブラウザ上からサーバーという処理を行うコンピュータへ通信を行い、サーバーから処理した結果を受け取ります。ブラウザでURLを入力した時は、少し待たないとWEBページが表示されないでしょう。これはサーバーからの応答を待っているからです。しかし、非同期通信を使ったアプリは、サーバーの応答を待たず次々と処理を行うことができます。例えば、Google
+              Mapは地図を動かしても動かした差分だけ画面が更新されますが、これは次々とサーバーと非同期通信し、リアルタイムで画面を更新することで実現しているのです。</p>
+            <footer class="blockquote-footer">侍ブログ編集部 in <cite title="Source Title"><a href="https://www.sejuku.net/blog/3936">初心者必見！JavaScriptでできることと作れるものってどんなもの？ | 侍エンジニア塾ブログ（Samurai Blog） - プログラミング入門者向けサイト</a></cite></footer><br>
+            <div style="margin:0 auto; width:400px;">
+              <img src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F149318%2Ffaa707a6-a504-4453-0ea8-3e1c0e8dbc81.gif?ixlib=rb-1.2.2&auto=compress%2Cformat&gif-q=60&s=8d9b3e86019597db05e8d700c35ab573"
+                alt="非同期通信の例" width="400" class="img-fluid">
+              <p><small>非同期通信の例</small></p>
+            </div>
+            <p>サーバにHTML形式ではないリクエストを送信し、HTMLのファイルを読み込まずに、サーバから取得したデータとJavaScriptを用いることで、ページの一部分だけを更新します。ざっくりと説明すると、画面の遷移のない通信のことです。よく色々なサイトで見ると思いますが、画面が白くなって、画面が遷移するようなものを同期通信と言います。</p>
+          </blockquote>
+          <p>次ページからは、HTML5との関連が深いAjaxについて、[基本] と [応用] に分けて解説します。</p><br><br>
+        </div>
+
+        <div class="bs-component">
+          <div style="margin:0 auto; width:200px;">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#">&laquo;</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="ajax1.html">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="ajax2.html">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="ajax1.html">&raquo;</a>
+              </li>
+            </ul>
+          </div>
+        </div><br><br><br>
+
+      </div>
+
+      <div class="col-md-4 col-xs-12">
+
+        <div class="page-header">
+          <h4 id="tables">制作メンバー</h4>
+        </div>
+
+        <div class="bs-component">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">名前</th>
+                <th scope="col">学年</th>
+                <th scope="col">所属</th>
+                <!--
+                <th scope="col">研究室</th>-->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">相川健太</th>
+                <td>M1</td>
+                <td>高度ICT領域</td>
+                <!--
+                <td>奥野研究室</td>-->
+              </tr>
+              <tr>
+                <th scope="row">深津紀樹</th>
+                <td>M2</td>
+                <td>メディアデザイン領域</td>
+                <!--
+                <td>姜(南)研究室</td>-->
+              </tr>
+              <tr>
+                <th scope="row">高橋正幸</th>
+                <td>M1</td>
+                <td>メディアデザイン領域</td>
+                <!--
+                <td>姜(南)研究室</td>-->
+              </tr>
+              <tr>
+                <th scope="row">千葉康貴</th>
+                <td>M1</td>
+                <td>メディアデザイン領域</td>
+                <!--
+                <td>姜(南)研究室</td>-->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+
+    <br><br><br>
+
+    <div style="text-align: center;">
+      <p><small>Copyright © 2019-2020 インタラクティブシステム通論 II チームA. All Rights Reserved.</small></p>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/canvas.js"></script>
+  <script type="text/javascript">
+    $('.bs-component [data-toggle="popover"]').popover();
+    $('.bs-component [data-toggle="tooltip"]').tooltip();
+  </script>
+</body>
+
+</html>
